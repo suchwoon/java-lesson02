@@ -18,10 +18,10 @@ public class ScoreAverage {
         int loop = 0;
         int score = 0;
         while (true) {
-            loop++;
             int input = scanner.nextInt();
             if (input == 0) break;
             score += input;
+            loop++;
         }
         return ((double)score) / ((double)loop);
     }
