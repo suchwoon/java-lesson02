@@ -37,7 +37,10 @@ public class DoWhileIteration {
      * - do-while문을 반드시 이용해야 합니다.
      */
     private static void checkValue() {
-        throw new RuntimeException("이 코드 라인을 지우고, 이곳에서 작성하십시오.");
+        do {
+            increaseValue();
+            System.out.println("현재 점수: " + currentValue);
+        } while (!stopGame() && currentValue < TARGET_VALUE);
     }
 
     public static boolean stopGame() {
